@@ -1,0 +1,208 @@
+{
+    "app": {
+        "modules": {
+            "module1": {
+                "type": "Module",
+                "name": "module1",
+                "entities": {
+                    "categories": {
+                        "type": "Entity",
+                        "name": "categories",
+                        "description": "Description of categories",
+                        "fields": {
+                            "id": {
+                                "type": "Field",
+                                "name": "id",
+                                "entity": "categories",
+                                "table": "categories",
+                                "module": "module1",
+                                "null": "NO",
+                                "is_pk": true,
+                                "max_length": null,
+                                "precision": null,
+                                "label": "id",
+                                "label_en": "id",
+                                "rows": 5,
+                                "data_type": "int(11)"
+                            },
+                            "name": {
+                                "type": "Field",
+                                "name": "name",
+                                "entity": "categories",
+                                "table": "categories",
+                                "module": "module1",
+                                "null": "NO",
+                                "is_pk": false,
+                                "max_length": null,
+                                "precision": null,
+                                "label": "name",
+                                "label_en": "name",
+                                "rows": 5,
+                                "data_type": "varchar(255)"
+                            },
+                            "description": {
+                                "type": "Field",
+                                "name": "description",
+                                "entity": "categories",
+                                "table": "categories",
+                                "module": "module1",
+                                "null": "YES",
+                                "is_pk": false,
+                                "max_length": null,
+                                "precision": null,
+                                "label": "description",
+                                "label_en": "description",
+                                "rows": 5,
+                                "data_type": "text"
+                            },
+                            "created_at": {
+                                "type": "Field",
+                                "name": "created_at",
+                                "entity": "categories",
+                                "table": "categories",
+                                "module": "module1",
+                                "null": "NO",
+                                "is_pk": false,
+                                "max_length": null,
+                                "precision": null,
+                                "label": "created_at",
+                                "label_en": "created_at",
+                                "rows": 5,
+                                "data_type": "timestamp"
+                            },
+                            "updated_at": {
+                                "type": "Field",
+                                "name": "updated_at",
+                                "entity": "categories",
+                                "table": "categories",
+                                "module": "module1",
+                                "null": "NO",
+                                "is_pk": false,
+                                "max_length": null,
+                                "precision": null,
+                                "label": "updated_at",
+                                "label_en": "updated_at",
+                                "rows": 5,
+                                "data_type": "timestamp"
+                            }
+                        },
+                        "rows": 5
+                    },
+                    "products": {
+                        "type": "Entity",
+                        "name": "products",
+                        "description": "Description of products",
+                        "fields": {
+                            "id": {
+                                "type": "Field",
+                                "name": "id",
+                                "entity": "products",
+                                "table": "products",
+                                "module": "module1",
+                                "null": "NO",
+                                "is_pk": true,
+                                "max_length": null,
+                                "precision": null,
+                                "label": "id",
+                                "label_en": "id",
+                                "rows": 8,
+                                "data_type": "int(11)"
+                            },
+                            "name": {
+                                "type": "Field",
+                                "name": "name",
+                                "entity": "products",
+                                "table": "products",
+                                "module": "module1",
+                                "null": "NO",
+                                "is_pk": false,
+                                "max_length": null,
+                                "precision": null,
+                                "label": "name",
+                                "label_en": "name",
+                                "rows": 8,
+                                "data_type": "varchar(255)"
+                            },
+                            "description": {
+                                "type": "Field",
+                                "name": "description",
+                                "entity": "products",
+                                "table": "products",
+                                "module": "module1",
+                                "null": "YES",
+                                "is_pk": false,
+                                "max_length": null,
+                                "precision": null,
+                                "label": "description",
+                                "label_en": "description",
+                                "rows": 8,
+                                "data_type": "text"
+                            },
+                            "price": {
+                                "type": "Field",
+                                "name": "price",
+                                "entity": "products",
+                                "table": "products",
+                                "module": "module1",
+                                "null": "NO",
+                                "is_pk": false,
+                                "max_length": null,
+                                "precision": null,
+                                "label": "price",
+                                "label_en": "price",
+                                "rows": 8,
+                                "data_type": "decimal(10,2)"
+                            },
+                            "category_id": {
+                                "type": "Field",
+                                "name": "category_id",
+                                "entity": "products",
+                                "table": "products",
+                                "module": "module1",
+                                "null": "YES",
+                                "is_pk": false,
+                                "max_length": null,
+                                "precision": null,
+                                "label": "category_id",
+                                "label_en": "category_id",
+                                "rows": 8,
+                                "data_type": "int(11)"
+                            },
+                            "created_at": {
+                                "type": "Field",
+                                "name": "created_at",
+                                "entity": "products",
+                                "table": "products",
+                                "module": "module1",
+                                "null": "NO",
+                                "is_pk": false,
+                                "max_length": null,
+                                "precision": null,
+                                "label": "created_at",
+                                "label_en": "created_at",
+                                "rows": 8,
+                                "data_type": "timestamp"
+                            },
+                            "updated_at": {
+                                "type": "Field",
+                                "name": "updated_at",
+                                "entity": "products",
+                                "table": "products",
+                                "module": "module1",
+                                "null": "NO",
+                                "is_pk": false,
+                                "max_length": null,
+                                "precision": null,
+                                "label": "updated_at",
+                                "label_en": "updated_at",
+                                "rows": 8,
+                                "data_type": "timestamp"
+                            }
+                        },
+                        "rows": 8
+                    }
+                }
+            }
+        }
+    }
+}
