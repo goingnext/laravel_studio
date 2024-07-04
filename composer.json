@@ -1,0 +1,18 @@
+{
+    "name": "goingnext/laravel_studio",
+    "autoload": {
+        "psr-4": {
+            "GoingNext\\LaravelStudio\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mejdi Habli",
+            "email": "hablimejdi@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.0.1"
+
+    }
+}
